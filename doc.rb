@@ -15,16 +15,16 @@ class Doc
   end
 end
 
-File.open("docraptor_sample.xls", "w+") do |f| 
-  f.write Doc.create(:document_content => "<table name='My First Sheet'><tr><td>Cell 1</td><td>Cell 2</td></tr></table>",
-                     :name             => "docraptor_sample.xls",
-                     :document_type    => "xls",
-                     :test             => true)
-end
+# File.open("docraptor_sample.xls", "w+") do |f| 
+#   f.write Doc.create(:document_content => "<table name='My First Sheet'><tr><td>Cell 1</td><td>Cell 2</td></tr></table>",
+#                      :name             => "docraptor_sample.xls",
+#                      :document_type    => "xls",
+#                      :test             => true)
+# end
 
-File.open("docraptor_sample.pdf", "w+") do |f|
-  f.write Doc.create(:document_content => "<html><body>Text in a PDF</body></html>",
-                     :name             => "docraptor_sample.pdf",
-                     :document_type    => "pdf",
-                     :test             => true)
-end
+# File.open("docraptor_sample.pdf", "w+") do |f|
+#   f.write Doc.create(:document_content => "<html><body>Text in a PDF</body></html>",
+#                      :name             => "docraptor_sample.pdf",
+#                      :document_type    => "pdf",
+#                      :test             => true)
+# end
