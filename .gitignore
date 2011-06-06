@@ -1,0 +1,8 @@
+*~
+.bundle
+.sass-cache
+db/*.sqlite3
+log/*.log
+tmp/
+vendor/bundle/ruby/1.[89]*/*
+!vendor/bundle/ruby/1.[89]*/cache
