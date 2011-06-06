@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    crack (0.1.8)
+    doc_raptor (0.1.3)
+      httparty (>= 0.4.3)
+    httparty (0.7.7)
+      crack (= 0.1.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  doc_raptor
