@@ -1,0 +1,69 @@
+<table>
+  <tr></tr>
+  <tr>
+    <td colspan='3' style='text-align:center;font-size:15pt;background-color:orange;'>
+      Woo A Header Cell
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td colspan='3' style='text-align:center;'>
+      some sub-header action
+    </td>
+  </tr>
+  <tr></tr>
+  <tr style='background-color:#BBBBBB;border-top-style:thin;font-weight:bold;'>
+    <th style='border-left-style:thin;'>    My col data 1</th>
+    <th style='text-decoration:underline;'> My col data 2</th>
+    <th style='border-right-style:thin;'>   My col data 3</th>
+  </tr>
+  <tr>
+    <td>Some text: 2</td>
+    <td>4</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 4</td>
+    <td>16</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 1</td>
+    <td>1</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 6</td>
+    <td>36</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 3</td>
+    <td>9</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 5</td>
+    <td>25</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 18</td>
+    <td>324</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr>
+    <td>Some text: 22</td>
+    <td>484</td>
+    <td>Wheeee</td>
+  </tr>
+  <tr style='border-top-style:thin;height:30;'>
+    <td style='text-align:right;'>
+      Sum:
+    </td>
+    <td style='color:green;font-weight:bold;'>
+      =SUM(B7:B14)
+    </td>
+    <td></td>
+  </tr>
+</table>
