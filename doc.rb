@@ -7,11 +7,21 @@ class Doc
   require 'rubygems'
   require 'httparty'
   include HTTParty
+
   base_uri "https://docraptor.com"
 
   # returns a string that is the document data
   def self.create(document_information)
     post("/docs", :body => {:doc => document_information}, :basic_auth => {:username => API_KEY})
+  end
+  
+  def self.create_brownbag_xls(document_content, filename = "brownbag_sample.xls")
+    File.open(filename, "w+") do |f|
+      f.write Doc.create(:document_content => document_content,
+                         :name => "brownbag_sample.xls",
+                         :document_type => "xls",
+                         :test => false)
+    end
   end
 end
 
@@ -28,3 +38,5 @@ end
 #                      :document_type    => "pdf",
 #                      :test             => true)
 # end
+
+# Doc.create_brownbag_xls("<table name='My First Sheet'><tr><td>Cell 1</td><td>Cell 2</td></tr></table>")
