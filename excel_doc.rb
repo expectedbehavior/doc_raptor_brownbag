@@ -4,3 +4,4 @@ html_file = ARGV[0]
 excel_file = html_file.gsub(".xml", ".xls")
 Doc.create_brownbag_xls(File.read(html_file), excel_file)
 
+system("open #{excel_file}")
