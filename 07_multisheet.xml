@@ -1,12 +1,13 @@
 <tables>
-  <table name="Sheet0">
+  <table name="Camera 1">
     <tr>
-      <td>Test Content</td>
+      <td>Hi, there.</td>
+      <td>I hear you like content</td>
     </tr>
   </table>
-  <table name="Sheet1">
+  <table name="Camera 2">
     <tr>
-      <td>='Sheet0'!A1</td>
+      <td>='Camera 1'!B1</td>
     </tr>
   </table>
 </tables>
