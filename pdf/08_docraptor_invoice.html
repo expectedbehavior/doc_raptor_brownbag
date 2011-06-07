@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <title>Expected Behavior Quote For Client X</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      /*resets from YUI*/
+      body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0; padding:0;}
+      table {border-collapse:collapse; border-spacing:0;}
+      fieldset,img {border:0;}
+      address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal;}
+      ol,ul {list-style:none;}
+      caption,th {text-align:left;}
+      h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:normal;}
+      q:before,q:after {content:;}
+      abbr,acronym { border:0;}
+
+      /* setup the page */
+      @page { margin: 30px; background: #ffffff; }
+      /* setup the footer */
+      @page { @bottom { content: flow(foot); } }
+      #footer { flow: static(foot); }
+
+      /* some useful defaults */
+      th, td, caption { padding: 4px 10px 4px 5px; }
+
+      /* useful utility */
+      .clear { clear:both; }
+
+      /* layout */
+      #container { font-family: Omnes Light, Trebuchet MS, Calibri, Futura, Geneva, Tahoma, sans-serif; font-size: 14pt; color: #a7a7a7; position: relative; }
+
+      /* footer shenanigans! */
+      #footer { text-align: center; display: block; }
+
+      /* hack around the way prince handles the footer */
+      #footer #contain { display: inline-block; width: 700px; height: 60px; }
+      /* end hack */
+
+      /* colors */
+      .green { color: #004f4b; }
+
+      /* stylin' */
+      #header_img { width: 100%; position: absolute; top: 0; left: 0; z-index: -2; }
+      
+      #main { margin: 0 30px; }
+
+      #header { font-size: 0.5em; text-align: right; margin-top: 2em; }
+
+      #header span.green { font-size: 1em; margin: 0 0.75em; }
+
+      #quote_name { margin-top: 4.5em; text-align: right; font-weight: bold; font-size: 1.5em }
+
+      #client { font-size: 0.75em; margin-top: 3em; }
+
+      #client_header { font-size: 0.5em; }
+
+      #phase_details {
+        margin-top: 2em;
+        font-size: 0.6em;
+        border-width: 1px;
+        border-spacing: 0px;
+        border-style: solid;
+        border-color: gray;
+        width: 100%;
+      }
+
+      #phase_details th { font-size: 0.8em; padding: 10px !important; border-style: solid !important; }
+
+      #phase_details th, td {
+        border-width: 1px;
+        padding: 3px 5px;
+        border-top-style: none;
+        border-bottom-style: none;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-color: gray;
+        background-color: white;
+      }
+      
+      #phase_details tr.first td { padding-top: 10px; padding-bottom: 10px; }
+
+      #phase_details td.price { text-align: left; }
+      #phase_details .price_container { float: left; min-width: 30%; }
+
+      #phase_details thead .title { width: 20%; }
+      #phase_details thead .description { width: 60%; }
+      #phase_details thead .price { width: 20%; }
+      #phase_details tr.last { border-bottom: 1px solid gray; }
+      #footer #contain { text-align: right; font-size: 0.8em; }
+      #total_price { text-align: right; margin-right: 5.75em; margin-top: 0.5em; }
+      #total_price h2 { color: darkgray; }
+      #total_price .price { margin-left: 0.75em; }
+      img.logo { width: 16px; height: 16px; position: relative; top: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="header_img" src="http://dl.dropbox.com/u/599002/eb/header-no_contact_info.png"/>
+      <div id="main">
+        <div id="header">
+          <div id="header_info">+1-866-998-8522<span class="green">|</span>2885 Sanford Ave SW #13508, Grandville, MI 49418-1342<span class="green">|</span>support@expectedbehavior.com</div>
+        </div>
+        <h1 class="green" id="quote_name">Invoice - June 7, 2011</h1>
+        <div id="client">
+          <div id="client_header">Bill To:</div>
+          <p class="address green">
+            Client<br />
+            Street Address<br />
+            City, State 01234<br />
+          </p>
+        </div>
+
+        <table id="phase_details">
+          <thead>
+            <tr>
+              <th class="title">Quantity</th>
+              <th class="description">Item</th>
+              <th class="price">Price</th>
+            </tr>
+          </thead>
+          <tr class="first green">
+            <td>1</td>
+            <td>
+              <img src="http://dl.dropbox.com/u/599002/eb/heroku_icon-70x70.png" alt="docraptor logo" class="logo" />
+              &nbsp;&nbsp;
+              DocRaptor - Basic Plan - June 8, 2011 - July 7, 2011
+            </td>
+            <td class="price"><div class="price_container">$15.00 USD</div></td>
+          </tr>
+          <tr class="last">
+            <td></td><td></td><td></td>
+          </tr>
+        </table>
+      </div>
+      <div id="total_price">
+        <h2>Total: <span class="price green">$15.00 USD</span></h2>
+        <h2>Total Due: <span class="price green">$0.00 USD</span></h2>
+      </div>
+      <div id="footer"><div id="contain" class="green">the path to simplicity.</div></div>
+    </div>
+  </body>
+</html>
