@@ -24,12 +24,13 @@ class Doc
     end
   end
   
-  def self.create_brownbag_pdf(document_content, filename = "brownbag_sample.pdf")
+  def self.create_brownbag_pdf(document_content, filename = "brownbag_sample.pdf", javascript = false)
     File.open(filename, "w+") do |f|
       f.write Doc.create(:document_content => document_content,
                          :name => filename,
                          :document_type => "pdf",
-                         :test => false)
+                         :test => false,
+                         :javascript => javascript)
     end
   end
 end
